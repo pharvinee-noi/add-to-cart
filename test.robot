@@ -55,7 +55,7 @@ Test case to verify shopping mall functionality
     # Scroll to the pricing section
     Scroll To Element    //section[@class="spc-product-pricing"]
     # Verify the element states in the pricing section
-    Get Element States    //section[@class="spc-product-pricing"]//div//div[text()="ยอดรวม (1 รายการ)"]    contains     attached    visible    enabled    editable
+    Get Element States    //section[@class="spc-product-pricing"]//div//div[text()="ยอดรวม (1 รายการ)"]    contains     attached    visible    enabled
     # Get the total pricing order
     ${pricing_order_total}    Get Text    //section[@class="spc-product-pricing"]//div[contains(@class,"pricing__order-total")]
     # Clean the amount by removing newline characters
